@@ -12,6 +12,7 @@
 	<properties>
 		<springframework.version>4.3.12.RELEASE</springframework.version>
 		<jetty.version>9.4.6.v20170531</jetty.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
