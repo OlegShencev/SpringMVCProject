@@ -15,4 +15,6 @@ public class HelloWorldController {
 		model.addAttribute("helloworld", "Здравствуй мир!");
 		return "welcome";
 	}
+
+
 }
