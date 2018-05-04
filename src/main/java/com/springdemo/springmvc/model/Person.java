@@ -13,8 +13,7 @@ public class Person {
     private String name;
 
     @NotEmpty(message = "Age cannot be empty")
-    @Range(min = 0l, message = "Age must be positive number")
-    private String age;
+    private int age;
 
     public String getName() {
         return name;
@@ -24,11 +23,11 @@ public class Person {
         this.name = name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 }
