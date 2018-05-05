@@ -1,18 +1,17 @@
 package com.springdemo.springmvc.model;
 
 
-import org.hibernate.validator.constraints.Range;
 
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
+
 
 public class Person {
 
-    @NotEmpty(message="Name can not be empty")
+    @NotEmpty(message="Name can not be empty", groups=Valid.FirstStep.class)
     private String name;
 
-    @Range(min = 0l, message = "Age must be positive number")
+    @Min(value = 1,message = "Select correct age", groups=Valid.SecondStep.class)
     private int age;
 
     public String getName() {

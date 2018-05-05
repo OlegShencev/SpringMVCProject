@@ -8,7 +8,6 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.validation.Valid;
 
 
 @Controller
@@ -20,7 +19,7 @@ public class PersonController {
 	}
 
 	@PostMapping("/addPerson")
-	public String submit(@Valid @ModelAttribute("person")Person person,
+	public String submit(@Validated({com.springdemo.springmvc.model.Valid.class}) @ModelAttribute("person")Person person,
 						 BindingResult result, ModelMap model) {
 		if (result.hasErrors()) {
 			return "form";
