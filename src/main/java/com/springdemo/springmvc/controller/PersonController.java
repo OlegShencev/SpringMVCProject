@@ -19,7 +19,7 @@ public class PersonController {
 	}
 
 	@PostMapping("/addPerson")
-	public String submit(@Validated({com.springdemo.springmvc.model.Valid.class}) @ModelAttribute("person")Person person,
+	public String submit(@Validated({com.springdemo.springmvc.model.Valid.class}) Person person,
 						 BindingResult result, ModelMap model) {
 		if (result.hasErrors()) {
 			return "form";
