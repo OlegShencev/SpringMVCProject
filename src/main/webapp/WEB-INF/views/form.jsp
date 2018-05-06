@@ -22,12 +22,12 @@
         <tr>
             <td><form:label path="name">Name</form:label></td>
             <td><form:input path="name"/></td>
-            <form:errors path="name" cssClass="error"></form:errors>
+            <td><form:errors path="name" cssClass="error"></form:errors></td>
         </tr>
         <tr>
             <td><form:label path="age">Age</form:label></td>
             <td><form:input path="age"/></td>
-            <form:errors path="age" cssClass="error"></form:errors>
+            <td><form:errors path="age" cssClass="error"></form:errors></td>
         </tr>
         <tr>
             <td><input type="submit" value="Submit"/></td>
