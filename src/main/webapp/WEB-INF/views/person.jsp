@@ -1,3 +1,8 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Person Information page</title>
+</head>
 <body>
 <h2>Submitted Person Information</h2>
 <table>
@@ -11,3 +16,4 @@
     </tr>
 </table>
 </body>
+</html>
