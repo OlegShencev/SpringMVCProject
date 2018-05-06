@@ -11,11 +11,12 @@
 <table>
     <tr>
         <td>Name :</td>
-        <td>${name}</td>
+        <td><c:out value="${name}"/></td>
+
     </tr>
     <tr>
         <td>Age :</td>
-        <td>${age}</td>
+        <td><c:out value="${age}"/></td>
     </tr>
 </table>
 </body>
